@@ -36,7 +36,7 @@ use Illuminate\Database\Eloquent\Model as Eloquent;
  */
 class User extends Eloquent
 {
-	use \Illuminate\Database\Eloquent\SoftDeletes;
+	use \Illuminate\Database\Eloquent\SoftDeletes;use \App\Helpers\UuidForKey;
 
 	protected $casts = [
 		'roles_id' => 'int'

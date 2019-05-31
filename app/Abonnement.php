@@ -28,7 +28,7 @@ use Illuminate\Database\Eloquent\Model as Eloquent;
  */
 class Abonnement extends Eloquent
 {
-	use \Illuminate\Database\Eloquent\SoftDeletes;
+	use \Illuminate\Database\Eloquent\SoftDeletes;use \App\Helpers\UuidForKey;
 
 	protected $casts = [
 		'clients_id' => 'int',

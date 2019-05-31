@@ -27,7 +27,7 @@ use Illuminate\Database\Eloquent\Model as Eloquent;
  */
 class Comptable extends Eloquent
 {
-	use \Illuminate\Database\Eloquent\SoftDeletes;
+	use \Illuminate\Database\Eloquent\SoftDeletes;use \App\Helpers\UuidForKey;
 
 	protected $casts = [
 		'users_id' => 'int'
